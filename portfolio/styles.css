@@ -132,4 +132,9 @@ h2{
 
 #navEnd{
 	border-right: 2px solid #575f6a;
+}
+
+#gitSubNav{
+	left:40%;
+}
 /*<--NavBar CCS Ends -->*/
