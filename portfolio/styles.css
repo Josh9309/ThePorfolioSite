@@ -12,7 +12,7 @@ body
 	color:white;
 }
 
-h1, h2{
+h1, h2, h3{
 	background-color: #FF8400;
 	border-radius: 10px;
 	text-align: center;
@@ -35,12 +35,20 @@ h2{
 	margin-top: 10px;
 }
 
+h3{
+	text-align: center;
+	width: 40%;
+}
 /* <-- General Page CSS Rules ends --> */
 
 /*<--About Me CSS Rules-->*/
 #aboutMe img{
 	max-height: 300px;
 }
+
+#bio {
+}
+
 /*<-- About Me CSS Rules ends-->*/
 
 /*<-- Nav Bar CSS Rules -->*/
@@ -147,4 +155,11 @@ h2{
 
 #projectSubNav{
 	left:19.7%;
+}
+
+@media screen and (max-width: 840px){
+	.navBar ul li a{
+		height: 50px;
+	}
+}
 /*<--NavBar CCS Ends -->*/
