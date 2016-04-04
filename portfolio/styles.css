@@ -163,3 +163,8 @@ h3{
 	}
 }
 /*<--NavBar CCS Ends -->*/
+
+/*<-- Screenshot CSS Ends -->*/
+.ScreenShot{
+	max-height: 300px;
+}
