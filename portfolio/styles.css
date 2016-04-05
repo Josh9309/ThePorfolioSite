@@ -24,13 +24,16 @@ div{
 	color: white;
 	width: 80%;
 	padding: 20px;
-	padding-top: px;
+	padding-top: 10px;
 	border-radius: 20px;
 	position: relative;
 	left: 7%;
 	margin: 20px;
 }
 
+h1{
+	border: 6px solid #383333;
+}
 h2{
 	margin-top: 10px;
 }
@@ -38,6 +41,17 @@ h2{
 h3{
 	text-align: center;
 	width: 40%;
+}
+
+h2,h3{
+	box-shadow:10px 10px 5px #000000;
+}
+
+p{
+	font-size: 20pt;
+	width: 80%;
+	position: relative;
+	left: 10%;
 }
 /* <-- General Page CSS Rules ends --> */
 
@@ -167,4 +181,24 @@ h3{
 /*<-- Screenshot CSS Ends -->*/
 .ScreenShot{
 	max-height: 300px;
+}
+
+/*<-- GithubLink CSS -->*/
+#GithubLink{
+	font-size:30pt;
+}
+
+/*<-- Footer CSS -->*/
+footer{
+	background-color: #4F4E65;
+	color: white;
+	width: 80%;
+	padding: 20px;
+	padding-top: 10px;
+	border-radius: 20px;
+	position: relative;
+	left: 7%;
+	margin: 20px;
+	text-align: center;
+	font-size: 15pt;
 }
