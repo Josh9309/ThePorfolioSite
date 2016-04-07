@@ -53,14 +53,25 @@ p{
 	position: relative;
 	left: 10%;
 }
+
+ul{
+	font-size: 20pt;
+}
 /* <-- General Page CSS Rules ends --> */
 
 /*<--About Me CSS Rules-->*/
 #aboutMe img{
-	max-height: 300px;
+	max-height:400px;
+}
+
+#profilePic{
+	max-height: 500px;
+	position: relative;
+	left: 35%;
 }
 
 #bio {
+	display:inline-block;
 }
 
 /*<-- About Me CSS Rules ends-->*/
