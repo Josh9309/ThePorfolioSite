@@ -65,6 +65,10 @@ ul{
 	position: relative;
 	left:28%;
 }
+
+section{
+	width: 85%;
+}
 /* <-- General Page CSS Rules ends --> */
 
 /*<--About Me CSS Rules-->*/
