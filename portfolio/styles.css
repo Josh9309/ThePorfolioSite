@@ -33,14 +33,19 @@ div{
 
 h1{
 	border: 6px solid #383333;
+	font-size: 28pt;
 }
 h2{
 	margin-top: 10px;
+	font-size: 24pt;
 }
 
 h3{
 	text-align: center;
 	width: 40%;
+	position:relative;
+	left:28%;
+	font-size: 22pt;
 }
 
 h2,h3{
@@ -57,6 +62,8 @@ p{
 ul{
 	font-size: 20pt;
 	word-wrap: break-word;
+	position: relative;
+	left:28%;
 }
 /* <-- General Page CSS Rules ends --> */
 
@@ -73,6 +80,10 @@ ul{
 
 #bio {
 	display:inline-block;
+}
+
+#ActivitiesList{
+	left: 20%
 }
 
 /*<-- About Me CSS Rules ends-->*/
@@ -193,16 +204,28 @@ ul{
 /*<-- Screenshot CSS Ends -->*/
 .ScreenShot{
 	max-height: 300px;
+	max-width:480px;
 }
 
+.coconutScreenShot{
+	left: 11%;
+	position: relative;
+}
+
+#screenShots{
+	position:relative;
+	left: 13%;
+}
 /*<-- GithubLink CSS -->*/
 #GithubLink{
 	font-size:30pt;
+	position: relative;
+	left: 27%;
 }
 
 /*<-- Footer CSS -->*/
 footer{
-	background-color: #4F4E65;
+	background-color: #FF8400;
 	color: white;
 	width: 80%;
 	padding: 20px;
@@ -213,8 +236,28 @@ footer{
 	margin: 20px;
 	text-align: center;
 	font-size: 15pt;
+	border: 6px solid #383333;
 }
 
+/*<-- Contact Me CSS-->*/
+#Contact ul{
+	left: 25%;
+	list-style-type: none;
+}
+
+/*<-- Resume CSS-->*/
+#Resume a{
+	position: relative;
+	left: 28%;
+	font-size: 20pt;
+}
+
+/*<-- Game Download CSS-->*/
+.DownloadLink {
+	position: relative;
+	left: 30%;
+	font-size:20pt;
+}
 /*<-- Mobile CSS -->*/
 @media screen and (max-width:480px){
 	p{
@@ -273,9 +316,9 @@ footer{
 	}
 	
 	h3{
-		width: 50%;
+		width: 70%;
 		position: relative;
-		left:  15%;
+		left:  8%;
 	}
 	
 	footer{
@@ -284,5 +327,38 @@ footer{
 	
 	.ScreenShot{
 		max-width: 288px;
+	}
+	
+	.coconutScreenShot{
+		max-width: 288px;
+		left: 12%;
+	}
+	
+	ul{
+		left:0%;
+	}
+	
+	#ActivitiesList{
+		left:0%;
+	}
+	
+	.DownloadLink{
+		left:0%;
+	}
+	
+	#Resume a{
+		left:0%;
+	}
+	
+	#Contact ul{
+		left: 0%;
+	}
+	
+	#screenShots{
+		left:0%;
+	}
+	
+	#GithubLink{
+		left:4%;
 	}
 }
