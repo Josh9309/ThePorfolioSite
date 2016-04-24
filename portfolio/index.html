@@ -13,8 +13,8 @@
 	
 	<nav class = "navBar">
 		<ul>
-			<li id="navBegin" ><a href="index.html"> Home </a> </li>
-			<li class="dropdownHead"> <a href="#"> Projects </a>  
+			<li id="navBegin" ><a class="active" href="index.html"> Home </a> </li>
+			<li class="dropdownHead"> <a href="#" id="Projects" onclick="projectClick()"> Projects </a>  
 				<ul id = "projectSubNav"> 
 					<li><a href="TBD.html"> TBD- Tis Been Decided </a> </li>
 					<li><a href="hunt.html"> Rathalos’s Hunt </a> </li>
@@ -25,7 +25,7 @@
 				</ul>
 			</li>
 			<li> <a href="skills.html">Skills </a></li>
-			<li class="dropdownHead" style="padding: 0px;"><a href="https://github.com/Josh9309"> GitHub </a>
+			<li class="dropdownHead" style="padding: 0px;"><a href="https://github.com/Josh9309" id="Github" onmouseover="gitClick()"> GitHub </a>
 				<ul id="gitSubNav"> 
 					<li><a href="https://github.com/Josh9309/TBD-The-Game"> TBD- Tis Been Decided </a> </li>
 					<li><a href="https://github.com/Josh9309/The-Asylum"> The Asylum </a> </li>
@@ -53,11 +53,11 @@
 		
 		
 		<!-- Activities/Hobbies section -->
-		<h3> Activies + Hobbies </h3>
+		<h3> Activities + Hobbies </h3>
 		<ul id="ActivitiesList">
 			<li> Committee Member of the STAR PR and <a href="https://starfest.ritstar.com">Starfest </a> planning committee </li>
 			<li> Life Scout of Troop 81(2014)</li>
-			<li> Captain of High school Robotics Team (2014) </li>
+			<li> Captain of High School Robotics Team (2014) </li>
 		</ul>
 		
 		<!-- Experience Section -->
@@ -70,7 +70,7 @@
 		</p>
 		
 		<p>
-			Intern at Funkiron(April 2014 - May 2014)<br/>
+			Intern at Funkiron (April 2014 - May 2014)<br/>
 			In my senior year of high school I interned at Funkitron Inc. where I worked on making a prototype for a proof of concept game. 
 		</p>
 		
@@ -93,8 +93,9 @@
 	
 	<footer>
 		Copyright 2016 Josh Malmquist<br/>
-		All Rights Reserved</br>
+		All Rights Reserved
 	</footer>
+	<script src="dropDownJava.js"></script>
 </body>
 
 </html>

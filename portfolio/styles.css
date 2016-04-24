@@ -22,6 +22,7 @@ body
 {
 	color:white;
 	overflow-x: hidden;
+	margin:auto;
 }
 
 h1, h2, h3{
@@ -72,21 +73,25 @@ p{
 	font-size: 20pt;
 	width: 80%;
 	position: relative;
-	left: 10%;
+	margin:auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
 	font-family: 'Roboto Slab', serif;
     background-color: dimgrey;
     border-radius: 10px;
     padding: 18px;
     border: 6px solid #383333;
+	
 }
 
 ul{
 	font-size: 20pt;
 	word-wrap: break-word;
 	position: relative;
-	left:28%;
+	/*left:28%;*/
 	font-family: 'Roboto Slab', serif;
-	
+	display:block;
+	margin:auto;
     background-color: dimgrey;
     border-radius: 10px;
     padding: 18px;
@@ -97,11 +102,12 @@ ul{
 .list{
 	padding-left:40px;
 	width:40%;
-	display:inline-block;
+	display:block;
 }
 
 section{
 	width: 85%;
+	margin:auto;
 }
 /* <-- General Page CSS Rules ends --> */
 
@@ -112,8 +118,10 @@ section{
 
 #profilePic{
 	max-height: 500px;
-	position: relative;
-	left: 35%;
+	/*position: relative;*/
+	/*left: 35%;*/
+	margin:auto; 
+	display:block;
 }
 
 #bio {
@@ -121,9 +129,10 @@ section{
 }
 
 #ActivitiesList{
-	left: 20%;
+	/*left: 20%;*/
 	width:50%;
-	display:inline-block;
+	display:block;
+	margin:auto;
 	padding-left:40px;
 	
 }
@@ -159,6 +168,7 @@ section{
 	border-left: 1px solid #383333;
 	border-right: 1px solid #383333;
 	width: 15%;
+	
 }
 
 .navBar li{
@@ -179,6 +189,10 @@ section{
 }
 
 .navBar ul li a:hover{
+	background-color:#4F4E65;
+}
+
+.active{
 	background-color:#4F4E65;
 }
 
@@ -252,13 +266,13 @@ section{
 }
 
 .coconutScreenShot{
-	left: 11%;
+	/*left: 11%;*/
 	position: relative;
 }
 
 #screenShots{
 	position:relative;
-	left: 13%;
+	text-align:center;
 }
 /*<-- GithubLink CSS -->*/
 #GithubLink{
@@ -286,14 +300,13 @@ footer{
 
 /*<-- Contact Me CSS-->*/
 #Contact ul{
-	left: 25%;
 	list-style-type: none;
 	width:60%;
 }
 
 /*<-- Resume CSS-->*/
 #Resume a{
-	position: relative;
+	/*position: relative;*/
 	font-size: 20pt;
 }
 
@@ -348,30 +361,29 @@ footer{
 	
 	#projectSubNav{
 		left:0.7%;
+		width:95%;
 	}
 	
 	#gitSubNav{
 		left:0.5%;
+		width:95%;
 	}
 	
 	.navBar ul{
 		left: 7%;
 	}
 	
-	#ActivitiesList{
-		left:9%;
+}
+
+@media screen and (max-width: 850px){
+	#profilePic{
+		/*left:25%;*/
 	}
 }
 
 @media screen and (max-width: 850px){
 	#profilePic{
-		left:25%;
-	}
-}
-
-@media screen and (max-width: 850px){
-	#profilePic{
-		left:15%;
+		/*left:15%;*/
 	}
 }
 
@@ -428,7 +440,7 @@ footer{
 	}
 	
 	#profilePic {
-		left: 6%;
+		/*left: 6%;*/
 	}
 	
 	h3{
