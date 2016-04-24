@@ -356,10 +356,12 @@ footer{
 	
 	#projectSubNav{
 		left:0.7%;
+		width:95%;
 	}
 	
 	#gitSubNav{
 		left:0.5%;
+		width:95%;
 	}
 	
 	.navBar ul{
