@@ -322,7 +322,18 @@ footer{
 	width: 50%;
 	font-size:20px;
 }
+
+/*<-- Fancy Box CSS -->*/
+.fancybox-wrap.fancybox-desktop.fancybox-type-image.fancybox-opened {
+    background-color: transparent;
+}
  
+.fancybox-title.fancybox-title-inside-wrap {
+    left: 0%;
+    background-color: transparent;
+    width: auto;
+}
+
 /*<-- Mobile CSS -->*/
 @media screen and (max-width:1330px){
 	.navBar ul li a{

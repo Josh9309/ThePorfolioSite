@@ -7,7 +7,39 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title> Josh Malmquist Portfolio </title>
 	<script src = "Javascript/jquery.min.js"></script>
-	<script type= "text/javascript" src="Javascript/lightbox.js"></script>
+	<!--<script type= "text/javascript" src="Javascript/lightbox.js"></script>-->
+	
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+	
+	<!-- Add fancyBox -->
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+	
+	<!-- Optionally add helpers - button, thumbnail and/or media -->
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
+	
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox-button").fancybox({
+		prevEffect		: 'none',
+		nextEffect		: 'none',
+		closeBtn		: false,
+		helpers		: {
+			title	: { type : 'inside' },
+			buttons	: {}
+		}
+		});
+	});
+	</script>
 </head>
 
 <body>
@@ -64,13 +96,34 @@
 		<h3> ScreenShots</h3>
 		
 		<section id="screenShots">
+		
+		<a class="fancybox-button" rel="fancybox-button" href="images/Asylum.png" title="Asylum Image 1 of 7">
 		<img class="ScreenShot" src="images/Asylum.png" alt="Asylum screenshot 1"/>
+		</a>
+		
+		<a class="fancybox-button" rel="fancybox-button" href="images/Asylum2.png" title="Asylum Image 2 of 7">
 		<img class="ScreenShot" src="images/Asylum2.png" alt="Asylum screenshot 2"/>
+		</a>
+		
+		<a class="fancybox-button" rel="fancybox-button" href="images/Asylum3.png" title="Asylum Image 3 of 7">
 		<img class="ScreenShot" src="images/Asylum3.png" alt="Asylum screenshot 3"/>
+		</a>
+		
+		<a class="fancybox-button" rel="fancybox-button" href="images/Asylum4.png" title="Asylum Image 4 of 7">
 		<img class="ScreenShot" src="images/Asylum4.png" alt="Asylum screenshot 4"/>
+		</a>
+		
+		<a class="fancybox-button" rel="fancybox-button" href="images/Asylum5.png" title="Asylum Image 5 of 7">
 		<img class="ScreenShot" src="images/Asylum5.png" alt="Asylum screenshot 5"/>
+		</a>
+		
+		<a class="fancybox-button" rel="fancybox-button" href="images/Asylum6.png" title="Asylum Image 6 of 7">
 		<img class="ScreenShot" src="images/Asylum6.png" alt="Asylum screenshot 6"/>
+		</a>
+		
+		<a class="fancybox-button" rel="fancybox-button" href="images/Asylum7.png" title="Asylum Image 7 of 7">
 		<img class="ScreenShot" src="images/Asylum7.png" alt="Asylum screenshot 7"/>
+		</a>
 		</section>
 		
 		<h3> GitHub </h3>
