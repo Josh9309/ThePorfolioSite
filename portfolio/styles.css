@@ -99,6 +99,7 @@ ul{
 
 }
 
+
 .list{
 	padding-left:40px;
 	width:40%;
@@ -137,6 +138,18 @@ section{
 	
 }
 
+#SkillsSection{
+	display:none;
+}
+
+#about, #skillsLink{
+	color: black;
+	text-decoration: none;
+	transition: border-bottom .5s;
+}
+.selected {
+	border-bottom: 4px solid black;
+}
 /*<-- About Me CSS Rules ends-->*/
 
 /*<-- Nav Bar CSS Rules -->*/

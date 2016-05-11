@@ -8,6 +8,28 @@
 	<title> Josh Malmquist Portfolio </title>
 	<script src = "Javascript/jquery.min.js"></script>
 	<script type= "text/javascript" src="Javascript/lightbox.js"></script>
+	<script type="text/javascript">
+		"use strict";
+		
+		$(document).ready(function(){
+			$("#skillsLink").on("click", function(e){
+				$("#aboutMe").slideUp();
+				$("#SkillsSection").slideDown();
+				
+				$("#about").removeClass("selected");
+				$("#skillsLink").addClass("selected");
+			});
+			
+			$("#about").on("click", function(e){
+				$("#SkillsSection").slideUp();
+				$("#aboutMe").slideDown();
+				
+				$("#skillsLink").removeClass("selected");
+				$("#about").addClass("selected");
+				
+			});
+		});
+	</script>
 </head>
 
 <body>
@@ -41,8 +63,12 @@
 		</ul>
 	</nav>
 	
+	<h2>
+		<a id="about" href="#" class="selected"> About Me </a>
+		<a id="skillsLink" href="#" > Skills </a>
+	</h2>
+	
 	<div id="aboutMe" >
-		<h2> About Me </h2>
 		
 		<img id="profilePic" src="images/profilePic.jpg" alt = "Profile Pic" />
 		
@@ -92,6 +118,37 @@
 			</ul>
 		</section>
 	</div>	
+	
+	<div id="SkillsSection">
+		
+		<h3> Programing Languages </h3>
+		<ul class="list">
+			<li> C#</li>
+			<li> Lua </li>
+			<li> HTML </li>
+			<li> C++(currently Learning) </li>
+			<li> CSS </li>
+			<li> JavaScript </li>
+		</ul>
+		
+		<h3> Software </h3>
+		<ul class="list">
+			<li> Unity </li>
+			<li> Corona SDK </li>
+			<li> Maya 2016 </li>
+			<li> Adobe Photoshop </li>
+			<li> Adobe Illustrator </li>
+			<li> GitHub </li>
+		</ul>
+		
+		<h3> Other Skills/Traits </h3>
+		<ul class="list"> 
+			<li> Hard Worker </li>
+			<li> Team Player </li>
+			<li> Good Listener </li>
+			<li> Fast-Learner </li>
+		</ul>
+	</div>
 	
 	<footer>
 		Copyright 2016 Josh Malmquist<br/>
