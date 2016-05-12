@@ -11,35 +11,7 @@
 </head>
 
 <body>
-	<h1> Josh Malmquist Portfolio Site </h1>
-	
-	<nav class = "navBar">
-		<ul>
-			<li id="navBegin" ><a href="../index.html"> Home </a> </li>
-			<li class="dropdownHead"> <a href="#" id="Projects" onclick="projectClick()"> Projects </a>  
-				<ul id = "projectSubNav"> 
-					<li><a href="../TBD.html"> TBD- Tis Been Decided </a> </li>
-					<li><a href="../hunt.html"> Rathalos’s Hunt </a> </li>
-					<li><a href="../asylum.html"> The Asylum </a> </li>
-					<li><a href="../coconut.html"> Coconut Beach Jump </a></li>
-					<li><a href="../robotZoo.html">  Robot Zoo </a> </li>
-					<li><a href="../gitTutorial.html"> Github Tutorial Site </a> </li>
-				</ul>
-			</li>
-			<li> <a href="../ContactMe.html">Contact Me </a></li>
-			<li class="dropdownHead" style="padding: 0px;"><a href="https://github.com/Josh9309" id="Github" onmouseover="gitClick()"> GitHub </a>
-				<ul id="gitSubNav"> 
-					<li><a href="https://github.com/Josh9309/TBD-The-Game"> TBD- Tis Been Decided </a> </li>
-					<li><a href="https://github.com/Josh9309/The-Asylum"> The Asylum </a> </li>
-					<li><a href="https://github.com/Josh9309/Robot-Zoo-Project">  Robot Zoo </a> </li>
-					<li><a href="https://github.com/Josh9309/Git-Web-Project"> Github Tutorial Site </a> </li>
-					<li><a href="https://github.com/Josh9309/ThePorfolioSite"> Portfolio Site </a> </li>
-				</ul>
-			</li>
-			<li><a href="../notes.html"> Notes </a></li>
-			<li id="navEnd"><a href="https://people.rit.edu/jxm3392/230/"> 230 Home </a></li>
-		</ul>
-	</nav>
+	<!--#include file="passNavBar.html"-->
 	
 	<div id="errorDiv"style="text-align:center;">
 		<h2> Protected Page!!! </h2>
@@ -51,8 +23,8 @@
 	</div>
 	
 	<footer>
-		Copyright 2016 Josh Malmquist<br/>
-		All Rights Reserved
+	<!--#include file="footer.html"-->
+	<!--#flastmod file="pass.html"-->
 	</footer>
 	<script type="text/javascript" src="../Javascript/dropDownJava.js"></script>
 </body>
