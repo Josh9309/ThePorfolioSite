@@ -29,7 +29,25 @@
 	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
-
+	"use strict";
+			
+			$("#skillsLink").on("click", function(e){
+				$("#aboutMe").slideUp();
+				$("#SkillsSection").slideDown();
+				
+				$("#about").removeClass("selected");
+				$("#skillsLink").addClass("selected");
+			});
+			
+			$("#about").on("click", function(e){
+				$("#SkillsSection").slideUp();
+				$("#aboutMe").slideDown();
+				
+				$("#skillsLink").removeClass("selected");
+				$("#about").addClass("selected");
+				
+			});
+ 
 			/*
 			 *  Button helper. Disable animations, hide close button, change title type and content
 			 */
