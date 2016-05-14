@@ -483,7 +483,6 @@ footer{
 	
 	.coconutScreenShot{
 		max-width: 288px;
-		left: 12%;
 	}
 	
 	ul{
@@ -512,5 +511,11 @@ footer{
 	
 	#GithubLink{
 		left:4%;
+	}
+	h3{
+		font-size:19pt;
+	}
+	section{
+		width:100%;
 	}
 }
