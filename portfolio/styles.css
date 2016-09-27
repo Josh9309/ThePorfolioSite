@@ -99,6 +99,7 @@ ul{
 
 }
 
+
 .list{
 	padding-left:40px;
 	width:40%;
@@ -137,6 +138,18 @@ section{
 	
 }
 
+#SkillsSection{
+	display:none;
+}
+
+#about, #skillsLink{
+	color: black;
+	text-decoration: none;
+	transition: border-bottom .5s;
+}
+.selected {
+	border-bottom: 4px solid black;
+}
 /*<-- About Me CSS Rules ends-->*/
 
 /*<-- Nav Bar CSS Rules -->*/
@@ -322,7 +335,18 @@ footer{
 	width: 50%;
 	font-size:20px;
 }
+
+/*<-- Fancy Box CSS -->*/
+.fancybox-wrap.fancybox-desktop.fancybox-type-image.fancybox-opened {
+    background-color: transparent;
+}
  
+.fancybox-title.fancybox-title-inside-wrap {
+    left: 0%;
+    background-color: transparent;
+    width: auto;
+}
+
 /*<-- Mobile CSS -->*/
 @media screen and (max-width:1330px){
 	.navBar ul li a{
@@ -459,7 +483,6 @@ footer{
 	
 	.coconutScreenShot{
 		max-width: 288px;
-		left: 12%;
 	}
 	
 	ul{
@@ -488,5 +511,11 @@ footer{
 	
 	#GithubLink{
 		left:4%;
+	}
+	h3{
+		font-size:19pt;
+	}
+	section{
+		width:100%;
 	}
 }

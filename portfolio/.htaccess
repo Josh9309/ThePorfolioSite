@@ -1,0 +1,2 @@
+ErrorDocument 404 /jxm3392/portfolio/404error.html
+DirectoryIndex index.html

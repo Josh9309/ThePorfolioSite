@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset = "utf-8">
+	<link href="styles.css" rel="stylesheet"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Josh Malmquist Portfolio </title>
+	<script src = "Javascript/jquery.min.js"></script>
+	<script type= "text/javascript" src="Javascript/lightbox.js"></script>
+</head>
+
+<body>
+	<!--#include file="contactNavBar.html"-->
+	
+	<div style="text-align:center">
+		    <!-- STEP 1: Put the full URL to formmail.php on your website in the 'action' value. -->
+		<form method="post" action="https://people.rit.edu/jxm3392/portfolio/formmail.php" name="SampleForm">
+			<input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
+		
+			<!-- STEP 2: Put your email address in the 'recipients' value.
+						Note that you also have to allow this email address in the
+						$TARGET_EMAIL setting within formmail.php!
+			-->
+			<input type="hidden" name="recipients" value="jxm3392@rit.edu" />
+		
+			<!-- STEP 3: Specify required fields in the 'required' value - or leave unchanged.
+					NOTE: DO NOT put your email address and name here.
+					"Your email address" and "Your name" are error messages for your users to see,
+					not placeholders for you to replace.
+			-->
+			<input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name" />
+		
+			<!-- STEP 4: Put your subject line in the 'subject' value. -->
+			<input type="hidden" name="subject" value="Sample FormMail Testing" />
+		
+			<!-- ALL DONE! Visit our site for HOW TO guides and more complex features. -->
+		
+			<!-- this derives (creates) "email" and "realname" special fields from the input fields -->
+			<input type="hidden" name="derive_fields" value="email=EmailAddr,realname=FullName" />
+		
+			<!-- this excludes the "email" and "realname" special fields from the body of the email you receive -->
+			<input type="hidden" name="mail_options" value="Exclude=email;realname" />
+			
+			<p> Please Enter Your Name:
+				<input type="text" name="FullName"/>
+			</p>
+			
+			<p> Please Enter Your Email Address: 
+				<input type="text" name="EmailAddr" />
+			</p>
+			
+			<!--<p>
+				<select name="animals[]" multiple="multiple" size="5">
+					<option value="Koala">Koala</option>
+					<option value="panda">Panda</option>
+					<option value="monkey">monkey</option>
+					<option value="sloath">sloath</option>
+					<option value="oshawatt">Oshawatt</option>
+				</select>&nbsp;
+				<br/>(Select all that apply; use CTRL-click to select)
+			</p>-->
+			
+			<p>Please enter your message:<br/>
+				<textarea name="mesg" rows="10" cols="50"></textarea>
+			</p>	
+			<input type="submit" value="Submit" />
+		</form>
+	</div>
+	
+	<footer>
+	<!--#include file="footer.html"-->
+	<!--#flastmod file="ContactMe.html"-->
+	</footer>
+	<script src="Javascript/dropDownJava.js"></script>
+</body>
+
+</html>
