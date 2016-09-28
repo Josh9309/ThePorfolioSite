@@ -61,8 +61,37 @@
 </head>
 
 <body>
-	<!--#include file="huntNavBar.html"-->
 	
+	<h1> Josh Malmquist Portfolio Site </h1>
+	
+	<nav class = "navBar">
+		<ul>
+			<li id="navBegin" ><a id="HomeLink"  href="index.html"> Home </a> </li>
+			<li class="dropdownHead"> <a href="#" id="Projects" class="active" onclick="projectClick()"> Projects </a>  
+				<ul id = "projectSubNav"> 
+					<li><a id="TBDLink" href="TBD.html"> TBD- Tis Been Decided </a> </li>
+					<li><a class="active" id="HUNTLink" href="hunt.html"> Rathalos’s Hunt </a> </li>
+					<li><a id="AsylumLink" href="asylum.html"> The Asylum </a> </li>
+					<li><a id="COCONUTLink" href="coconut.html"> Coconut Beach Jump </a></li>
+					<li><a id="ROBOTZOOLink" href="robotZoo.html">  Robot Zoo </a> </li>
+					<li><a id="GITTUTORIALLink" href="gitTutorial.html"> Github Tutorial Site </a> </li>
+				</ul>
+			</li>
+			<li> <a  id="ContactLINK" href="ContactMe.html">Contact Me </a></li>
+			<li class="dropdownHead" style="padding: 0px;"><a href="https://github.com/Josh9309" id="Github" onmouseover="gitClick()"> GitHub </a>
+				<ul id="gitSubNav"> 
+					<li><a href="https://github.com/Josh9309/TBD-The-Game"> TBD- Tis Been Decided </a> </li>
+					<li><a href="https://github.com/Josh9309/The-Asylum"> The Asylum </a> </li>
+					<li><a href="https://github.com/Josh9309/Robot-Zoo-Project">  Robot Zoo </a> </li>
+					<li><a href="https://github.com/Josh9309/Git-Web-Project"> Github Tutorial Site </a> </li>
+					<li><a href="https://github.com/Josh9309/ThePorfolioSite"> Portfolio Site </a> </li>
+				</ul>
+			</li>
+			<li><a  id="NOTESLink"  href="notes.html"> Notes </a></li>
+			<li  id="navEnd"><a href="https://people.rit.edu/jxm3392/230/"> 230 Home </a></li>
+		</ul>
+	</nav>
+
 	<div>
 		<h2> Rathalos’s Hunt </h2>
 		
@@ -70,7 +99,7 @@
 		
 		<p>
 			In Rathalos’s Hunt I created all the art assets and the opening animatic for the game. The Game was made by my professor Sten Mckenzie and we were asked to created a 
-			story and 2D art assets for the game. The game is a shoot em up where you fight on coming enemies. The story behind my game was that you are Rathalos, 
+			story and 2D art assets for the game. The game is a shoot em up where you fight oncoming enemies. The story behind my game was that you are Rathalos, 
 			an experienced monster hunter working to become a master hunter. To do this Rathalos must journey to an ancient castle that has become overridden
 			with various types of monsters and completely clear the castle in order to earn his title as Master Monster Hunter.
 		</p>
@@ -107,8 +136,8 @@
 	</div>
 	
 	<footer>
-	<!--#include file="footer.html"-->
-	<!--#flastmod file="hunt.html"-->
+		Copyright 2016 Josh Malmquist<br/>
+		All Rights Reserved<br/>
 	</footer>
 	<script src="Javascript/dropDownJava.js"></script>
 </body>
