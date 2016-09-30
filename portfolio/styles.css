@@ -180,7 +180,7 @@ section{
 	float:left;
 	border-left: 1px solid #383333;
 	border-right: 1px solid #383333;
-	width: 15%;
+	width: 18%;
 	
 }
 
@@ -256,13 +256,13 @@ section{
 }
 
 #gitSubNav{
-	left:49.5%;
-	width:14%;
+	left:58.5%;
+	width:17%;
 }
 
 #projectSubNav{
-	left:19.7%;
-	width:14%;
+	left:22.7%;
+	width:17%;
 }
 
 @media screen and (max-width: 840px){
