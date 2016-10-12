@@ -5,7 +5,7 @@
 	<meta charset = "utf-8">
 	<link href="styles.css" rel="stylesheet"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> Josh Malmquist Porfolio </title>
+	<title> Josh Malmquist Portfolio </title>
 		
 	<!-- Add jQuery library -->
 	<script type="text/javascript" src="fancybox/lib/jquery-1.10.1.min.js"></script>
@@ -65,18 +65,18 @@
 	<nav class = "navBar">
 		<ul>
 			<li id="navBegin" ><a id="HomeLink"  href="index.html"> Home </a> </li>
-			<li class="dropdownHead"> <a href="Projects.html" id="Projects" onclick="projectClick()"> Projects </a>  
+			<li class="dropdownHead"> <a href="Projects.html" id="Projects" class="active" onclick="projectClick()"> Projects </a>  
 				<ul id = "projectSubNav"> 
 					<li><a id="TBDLink" href="TBD.html"> TBD- Tis Been Decided </a> </li>
 					<li><a id="HUNTLink" href="hunt.html"> Rathalos’s Hunt </a> </li>
 					<li><a id="AsylumLink" href="asylum.html"> The Asylum </a> </li>
 					<!--<li><a id="COCONUTLink" href="coconut.html"> Coconut Beach Jump </a></li>-->
-					<li><a  id="ROBOTZOOLink" href="robotZoo.html">  Robot Zoo </a> </li>
+					<li><a id="ROBOTZOOLink" href="robotZoo.html">  Robot Zoo </a> </li>
 					<li><a id="GITTUTORIALLink" href="gitTutorial.html"> Github Tutorial Site </a> </li>
 					<li><a id="CascadeLink" href="Cascade.html"> Cascade </a> </li>
 				</ul>
 			</li>
-			<li> <a id="ContactLINK" href="ContactMe.html">Contact Me </a></li>
+			<li> <a  id="ContactLINK" href="ContactMe.html">Contact Me </a></li>
 			<li class="dropdownHead" style="padding: 0px;"><a href="https://github.com/Josh9309" id="Github" onmouseover="gitClick()"> GitHub </a>
 				<ul id="gitSubNav"> 
 					<li><a href="https://github.com/Josh9309/TBD-The-Game"> TBD- Tis Been Decided </a> </li>
@@ -86,23 +86,42 @@
 					<li><a href="https://github.com/Josh9309/ThePorfolioSite"> Portfolio Site </a> </li>
 				</ul>
 			</li>
-			<li><a class="active" id="NOTESLink"  href="notes.html"> Notes </a></li>
+			<li><a  id="NOTESLink"  href="notes.html"> Notes </a></li>
 		</ul>
 	</nav>
 	
-	<div id="Notes">
-		<h2> Notes </h2>
+	<div>
+		<h2> Shipped Titles </h2>
 		
-		<h3> Citations </h3>
-		<ul id="citationsList" class="list">
-			<li>https://products.office.com/en-us/word Word Logo</li>
-			<li>http://www.adobe.com/legal/permissions/icons-web-logos.html PDF Logo</li>
-			<li>https://www.google.com/fonts/specimen/Black+Ops+One Black Ops One Font from Google Fonts (used for headings) </li>
-			<li>https://www.google.com/fonts/specimen/Roboto+Slab Roboto Slab Font from Google Fonts (used for body text) </li>
-			<li>https://www.google.com/fonts/specimen/Audiowide Audiowide Font from Google Fonts </li>
-			<li>http://fancybox.net/ FancyBox Plug-In </li>
-		</ul>
+		<h3> Cascade </h3>
+		<section id="screenShots">
+			<a href = "Cascade.html"> <img class="ScreenShot TitleImage" src="images/Cascade.jpg" alt="Cascade ScreenShot 1" /></a>
+		</section>
 		
+		<h2> Projects </h2>
+		
+		<h3> Robot Zoo </h3>
+		<section id="screenShots">
+			<a href = "robotZoo.html"> <img class="ScreenShot TitleImage" src="images/robotZooTitle.png" alt="robot Zoo Title Image" /></a>
+		</section>
+		
+		<h3> TBD - Tis been Decided </h3>
+		<section id="screenShots">
+					<a href = "robotZoo.html"> <img id= "TBDTitle" class="ScreenShot TitleImage" src="images/floorIsLava1.png" alt="robot Zoo Title Image" /></a>
+		</section>
+		
+		<h3> Asylum </h3>
+		<section id="screenShots">
+			<a href = "asylum.html"> <img class="ScreenShot TitleImage" src="images/Asylum5.png" alt="Asylum Title Image" /></a>
+		</section>
+		<h3> Rathalos’s Hunt </h3>
+		<section id="screenShots">
+			<a href = "hunt.html"> <img class="ScreenShot TitleImage" src="images/RathalosHunt2.png" alt="Rathalos’s Hunt Title Image" /></a>
+		</section>
+		<h3> Git Tutorial </h3>
+		<section id="screenShots">
+			<a href = "gitTutorial.html"> <img class="ScreenShot TitleImage" src="images/gitTutorial1.png" alt=" Git Tutorial Title Image" /></a>
+		</section>
 	</div>
 	
 	<footer>
