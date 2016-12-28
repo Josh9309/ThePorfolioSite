@@ -343,6 +343,22 @@ footer{
 	margin: auto;
 }
 
+/*<-- Projects CSS -->*/
+.TitleImage{
+	transition: width 2s;
+}
+
+.TitleImage:hover{
+	max-width:500px
+}
+
+#TBDTitle:hover{
+	max-width: 500px;
+	max-height: 313px;
+	width: 500px;
+	height: 320px;
+}
+
 /*<-- Fancy Box CSS -->*/
 .fancybox-wrap.fancybox-desktop.fancybox-type-image.fancybox-opened {
     background-color: transparent;

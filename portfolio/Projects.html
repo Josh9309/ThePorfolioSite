@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset = "utf-8">
+	<link href="styles.css" rel="stylesheet"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Josh Malmquist Portfolio </title>
+		
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="fancybox/lib/jquery-1.10.1.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+	<!-- Add Thumbnail helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+		});
+	</script>
+</head>
+
+<body>
+	
+	<h1> Josh Malmquist Portfolio Site </h1>
+	
+	<nav class = "navBar">
+		<ul>
+			<li id="navBegin" ><a id="HomeLink"  href="index.html"> Home </a> </li>
+			<li class="dropdownHead"> <a href="Projects.html" id="Projects" class="active" onclick="projectClick()"> Projects </a>  
+				<ul id = "projectSubNav"> 
+					<li><a id="CascadeLink" href="Cascade.html"> Cascade </a> </li>
+					<li><a id="PulpLink" href="Pulp_Legends.html"> Pulp Legends </a></li>
+					<li><a id="TBDLink" href="TBD.html"> TBD- Tis Been Decided </a> </li>
+					<li><a id="HUNTLink" href="hunt.html"> Rathalos’s Hunt </a> </li>
+					<li><a id="AsylumLink" href="asylum.html"> The Asylum </a> </li>
+					<li><a id="ROBOTZOOLink" href="robotZoo.html">  Robot Zoo </a> </li>
+					<li><a id="GITTUTORIALLink" href="gitTutorial.html"> Github Tutorial Site </a> </li>
+					
+				</ul>
+			</li>
+			<li> <a  id="ContactLINK" href="ContactMe.html">Contact Me </a></li>
+			<li class="dropdownHead" style="padding: 0px;"><a href="https://github.com/Josh9309" id="Github" onmouseover="gitClick()"> GitHub </a>
+				<ul id="gitSubNav"> 
+					<li><a href="https://github.com/Josh9309/Pulp-Legends"> Pulp Legends </a> </li>
+					<li><a href="https://github.com/Josh9309/TBD-The-Game"> TBD- Tis Been Decided </a> </li>
+					<li><a href="https://github.com/Josh9309/The-Asylum"> The Asylum </a> </li>
+					<li><a href="https://github.com/Josh9309/Robot-Zoo-Project">  Robot Zoo </a> </li>
+					<li><a href="https://github.com/Josh9309/Git-Web-Project"> Github Tutorial Site </a> </li>
+					<li><a href="https://github.com/Josh9309/ThePorfolioSite"> Portfolio Site </a> </li>
+				</ul>
+			</li>
+			<li><a  id="NOTESLink"  href="notes.html"> Notes </a></li>
+		</ul>
+	</nav>
+	
+	<div>
+		<h2> Shipped Titles </h2>
+		
+		<h3> Cascade </h3>
+		<section id="screenShots">
+			<a href = "Cascade.html"> <img class="ScreenShot TitleImage" src="images/Cascade.jpg" alt="Cascade ScreenShot 1" /></a>
+		</section>
+		
+		<h2> Projects </h2>
+		
+		<h3> Pulp Legends </h3>
+		<section id="screenShots">
+			<a href = "Pulp_Legends.html"> <img class="ScreenShot TitleImage" src="images/Pulp_Legends/Pulp-Legends_Title.png" alt="Pulp Legends Title Image" /></a>
+		</section>
+		
+		<h3> Robot Zoo </h3>
+		<section id="screenShots">
+			<a href = "robotZoo.html"> <img class="ScreenShot TitleImage" src="images/robotZooTitle.png" alt="robot Zoo Title Image" /></a>
+		</section>
+		
+		<h3> TBD - Tis been Decided </h3>
+		<section id="screenShots">
+					<a href = "robotZoo.html"> <img id= "TBDTitle" class="ScreenShot TitleImage" src="images/floorIsLava1.png" alt="robot Zoo Title Image" /></a>
+		</section>
+		
+		<h3> Asylum </h3>
+		<section id="screenShots">
+			<a href = "asylum.html"> <img class="ScreenShot TitleImage" src="images/Asylum5.png" alt="Asylum Title Image" /></a>
+		</section>
+		<h3> Rathalos’s Hunt </h3>
+		<section id="screenShots">
+			<a href = "hunt.html"> <img class="ScreenShot TitleImage" src="images/RathalosHunt2.png" alt="Rathalos’s Hunt Title Image" /></a>
+		</section>
+		<h3> Git Tutorial </h3>
+		<section id="screenShots">
+			<a href = "gitTutorial.html"> <img class="ScreenShot TitleImage" src="images/gitTutorial1.png" alt=" Git Tutorial Title Image" /></a>
+		</section>
+	</div>
+	
+	<footer>
+		Copyright 2016 Josh Malmquist<br/>
+		All Rights Reserved<br/>
+	</footer>
+	<script src="Javascript/dropDownJava.js"></script>
+</body>
+
+</html>
