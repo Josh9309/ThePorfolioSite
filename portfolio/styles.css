@@ -336,6 +336,13 @@ footer{
 	font-size:20px;
 }
 
+/*<-- Design Doc CSS -->*/
+#PulpDesign{
+	max-height:700px;
+	display: block;
+	margin: auto;
+}
+
 /*<-- Fancy Box CSS -->*/
 .fancybox-wrap.fancybox-desktop.fancybox-type-image.fancybox-opened {
     background-color: transparent;
@@ -403,6 +410,9 @@ footer{
 	#profilePic{
 		/*left:25%;*/
 	}
+	
+	#PulpDesign{
+		max-width:400px;
 }
 
 @media screen and (max-width: 850px){
@@ -411,7 +421,7 @@ footer{
 	}
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:630px){
 	p{
 		
 	}
@@ -509,6 +519,10 @@ footer{
 		left:0%;
 	}
 	
+	#PulpDesign{
+		max-width:288px;
+	}
+	
 	#GithubLink{
 		left:4%;
 	}
@@ -518,4 +532,13 @@ footer{
 	section{
 		width:100%;
 	}
+}
+
+@media screen and (max-width: 400px){
+	.ScreenShot{
+		max-width: 245px;
+	}
+	
+	#PulpDesign{
+		max-width: 210px;
 }
