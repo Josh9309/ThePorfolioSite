@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset = "utf-8">
+	<link href="styles.css" rel="stylesheet"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Pulp Legends </title>
+		
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="fancybox/lib/jquery-1.10.1.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+	<!-- Add Thumbnail helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+		});
+	</script>
+</head>
+
+<body>
+	
+	<h1> Josh Malmquist Portfolio Site </h1>
+	
+	<nav class = "navBar">
+		<ul>
+			<li id="navBegin" ><a id="HomeLink"  href="index.html"> Home </a> </li>
+			<li class="dropdownHead"> <a href="Projects.html" id="Projects" class="active" onclick="projectClick()"> Projects </a>  
+				<ul id = "projectSubNav"> 
+					<li><a id="CascadeLink" href="Cascade.html"> Cascade </a> </li>
+					<li class = "active"><a id="PulpLink" href="Pulp_Legends.html"> Pulp Legends </a></li>
+					<li><a id="TBDLink" href="TBD.html"> TBD- Tis Been Decided </a> </li>
+					<li><a id="HUNTLink" href="hunt.html"> Rathalos’s Hunt </a> </li>
+					<li><a id="AsylumLink" href="asylum.html"> The Asylum </a> </li>
+					<li><a id="ROBOTZOOLink" href="robotZoo.html">  Robot Zoo </a> </li>
+					<li><a id="GITTUTORIALLink" href="gitTutorial.html"> Github Tutorial Site </a> </li>
+					
+				</ul>
+			</li>
+			<li> <a  id="ContactLINK" href="ContactMe.html">Contact Me </a></li>
+			<li class="dropdownHead" style="padding: 0px;"><a href="https://github.com/Josh9309" id="Github" onmouseover="gitClick()"> GitHub </a>
+				<ul id="gitSubNav"> 
+					<li><a href="https://github.com/Josh9309/Pulp-Legends"> Pulp Legends </a> </li>
+					<li><a href="https://github.com/Josh9309/TBD-The-Game"> TBD- Tis Been Decided </a> </li>
+					<li><a href="https://github.com/Josh9309/The-Asylum"> The Asylum </a> </li>
+					<li><a href="https://github.com/Josh9309/Robot-Zoo-Project">  Robot Zoo </a> </li>
+					<li><a href="https://github.com/Josh9309/Git-Web-Project"> Github Tutorial Site </a> </li>
+					<li><a href="https://github.com/Josh9309/ThePorfolioSite"> Portfolio Site </a> </li>
+				</ul>
+			</li>
+			<li><a  id="NOTESLink"  href="notes.html"> Notes </a></li>
+		</ul>
+	</nav>
+	
+	<div>
+		<h2> Pulp Legends </h2>
+		
+		<h3> Summary </h3>
+		
+		<p>
+			Pulp Legends is a 2D couch co-op/single player side scrolling platformer set in a noir/pulp fiction universe. You are Detectives with odd powers who work together to clean up the streets of their city.
+			</br></br>
+			Pulp Legends was made by our 4-person team over a 5-week timeline from start to finish. I acted as the Game's Project Leader during its production. I oversaw the entire team, from giving out weekly tasks, 
+			polishing and bug fixing builds before playtest, keep the project on schedule, and managing the git repository. As well as being the project lead I was also heavily involved in programming for this game.
+			I programed the entire UI for the game from character selection and menus to the game’s level UI. I also created the base framework for the two playable characters Sam Spade and Lucy Faire which include the moving,
+			jumping, melee attacks, and the life system.
+		</p>
+
+		<h3> Team Members </h3>
+		<ul class="list">
+			<li> Noah Parker = Lead Programmer </li>
+			<li> Anna Karwaki = Character Artist/Animator </li>
+			<li> Jason Noone = Lead Level Designer</li>
+			<li> Josh Malmquist (ME) = Game Project Lead/Programmer/UI </li>
+		</ul>
+		<h3> Design Doc </h3>
+		
+		
+			<a class="fancybox-buttons" data-fancybox-group="button" href="images/Pulp_Legends/PLDesignDoc.png" title="Pulp Legends Design Doc">
+				<img  id="PulpDesign"   src = "images/Pulp_Legends/PLDesignDoc.png" alt = "Pulp Legends Design Doc"/>
+			</a>
+		
+		
+		<h3 > ScreenShots</h3>
+		
+		<section id="screenShots">
+		<a class="fancybox-buttons" data-fancybox-group="button" href="images/Pulp_Legends/Pulp-Legends_Title.png" title="Pulp Legends Title">
+		<img class="ScreenShot" src="images/Pulp_Legends/Pulp-Legends_Title.png" alt="Pulp Legends Title" />
+		</a>
+		
+		<a class="fancybox-buttons" data-fancybox-group="button" href="images/Pulp_Legends/Pulp-Legends_Character_Selection.png" title="Pulp Legends Character Selection">
+		<img class="ScreenShot" src="images/Pulp_Legends/Pulp-Legends_Character_Selection.png" alt="Pulp Legends Character Selection" />
+		</a>
+		
+		<a class="fancybox-buttons" data-fancybox-group="button" href="images/Pulp_Legends/Pulp-Legends_Gameplay_1.png" title="Pulp Legends Gameplay 1">
+		<img class="ScreenShot" src="images/Pulp_Legends/Pulp-Legends_Gameplay_1.png" alt="Pulp Legends Gameplay 1" />
+		</a>
+		
+		<a class="fancybox-buttons" data-fancybox-group="button"  href="images/Pulp_Legends/Pulp-Legends_Gameplay_2.png" title="Pulp Legends Gameplay 2">
+		<img class="ScreenShot" src="images/Pulp_Legends/Pulp-Legends_Gameplay_2.png" alt="Pulp Legends Gameplay 2" />
+		</a>
+		
+		<a class="fancybox-buttons" data-fancybox-group="button"  href="images/Pulp_Legends/Pulp-Legends_Gameplay_3.png" title="Pulp Legends Gameplay 3">
+		<img class="ScreenShot" src="images/Pulp_Legends/Pulp-Legends_Gameplay_3.png" alt="Pulp Legends Gameplay 3" />
+		</a>
+		</section>
+		
+		<h3> GitHub </h3>
+		<p>
+			<a id="GithubLink" href = "https://github.com/Josh9309/Pulp-Legends"> <img src="images/githubLogo.png" alt="Github Logo"/> Pulp Legends Git Repo </a>
+		</p>
+		
+		<h3> Game Download </h3>
+		<p>
+			<a class="DownloadLink" href = "downloads/Pulp_Legends.zip" download> Pulp Legends Game Download </a>
+		</p>
+	</div>
+	
+	<footer>
+		Copyright 2016 Josh Malmquist<br/>
+		All Rights Reserved<br/>
+	</footer>
+	<script src="Javascript/dropDownJava.js"></script>
+</body>
+
+</html>
