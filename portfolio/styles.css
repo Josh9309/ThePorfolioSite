@@ -290,8 +290,7 @@ section{
 /*<-- GithubLink CSS -->*/
 #GithubLink{
 	font-size:30pt;
-	position: relative;
-	left: 27%;
+    display: block;
 }
 
 /*<-- Footer CSS -->*/
