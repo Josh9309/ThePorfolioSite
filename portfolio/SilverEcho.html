@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset = "utf-8">
+	<link href="styles.css" rel="stylesheet"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Silver Echo </title>
+		
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="fancybox/lib/jquery-1.10.1.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+	<!-- Add Thumbnail helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+		});
+	</script>
+</head>
+
+<body>
+	
+	<h1> Josh Malmquist Portfolio Site </h1>
+	
+	<nav class = "navBar">
+		<ul>
+			<li id="navBegin" ><a id="HomeLink"  href="index.html"> Home </a> </li>
+			<li class="dropdownHead"> <a href="Projects.html" id="Projects" class="active" onmouseover="projectClick()"> Projects </a>  
+				<ul id = "projectSubNav"> 
+					<li><a id="CascadeLink" href="Cascade.html"> Cascade </a> </li>
+					<li><a id="PulpLink" href="Pulp_Legends.html"> Pulp Legends </a></li>
+					<li><a id="BetaLink" href="Beta_Rangers.html"> Beta Rangers </a></li>
+					<li class= "active"><a id=SilverEchoLink href="SilverEcho.html"> Silver Echo</a></li>
+					<li><a id="SlimeLink" href="Slime_Spree.html"> Slime Spree </a></li>
+					<li><a id="TBDLink" href="TBD.html"> TBD- Tis Been Decided </a> </li>
+					<li><a id="ROBOTZOOLink" href="robotZoo.html">  Robot Zoo </a> </li>
+				</ul>
+			</li>
+			<li> <a  id="ContactLINK" href="ContactMe.html">Contact Me </a></li>
+			<li class="dropdownHead" style="padding: 0px;"><a href="https://github.com/Josh9309" id="Github" onmouseover="gitClick()"> GitHub </a>
+				<ul id="gitSubNav"> 
+					<li><a href="https://github.com/Josh9309/Pulp-Legends"> Pulp Legends </a> </li>
+					<li><a href="https://github.com/Josh9309/Beta-Rangers"> Beta Rangers </a> </li>
+					<li><a href="https://github.com/Josh9309/SilverEcho"> Silver Echo</a></li>
+					<li><a href="https://github.com/Josh9309/Slime-Spree"> Slime Spree </a> </li>
+					<li><a href="https://github.com/Josh9309/TBD-The-Game"> TBD- Tis Been Decided </a> </li>
+					<li><a href="https://github.com/Josh9309/ThePorfolioSite"> Portfolio Site </a> </li>
+				</ul>
+			</li>
+			<li><a  id="NOTESLink"  href="notes.html"> Notes </a></li>
+		</ul>
+	</nav>
+	
+	<div>
+		<h2> Silver Echo </h2>
+		
+		<h3> Summary </h3>
+		
+		<p>
+			Silver Echo is a game that was made during the Global Game Jam 2017 at the RIT Jam Site. Silver Echo is a stealth game where you are in a mansion and you must escape without getting caught by security patrols. The catch though is that you can only see enemies by using a sonar wave ping. You must stealthily sneak around the security and collect all the key cards need to open the door and escape the mansion.
+          
+            Silver Echo was made by 8 person team in Unity 5 over 48 hours during Global Game Jam.
+        </p>
+        
+        <h3> What I Worked On</h3>
+          
+		<ul class="list">
+			<li>Programmed the Pinging mechanic</li>
+			<li>Setup the Game Camera</li>
+			<li>Setup animations on Enemies</li>
+			<li>Worked on Enemy AI with Charles</li>
+			<li>Worked with Art team to import models</li>
+		</ul>
+
+		<h3> Team Members </h3>
+		<ul class="list">
+			<li> Kevin Idzik = UI Programmer</li>
+			<li> Joel Shuart = Level Designer</li>
+			<li> Charles Williams = AI Programmer </li>
+			<li> Josh Malmquist (ME) = Gameplay Programmer </li>
+            <li> Brandon Calabrese = Programmer</li>
+			<li> Satchit Puri = UI Programmer</li>
+            <li> David Chang = 3D Modeler</li>
+            <li> Marc Laroussini = Sound</li>
+		</ul>
+		
+		<h3> Gameplay </h3>
+		
+		<p>
+			<iframe style="left:10%" width="100%" height="500" src="https://www.youtube.com/embed/TvBkX8HyAgI" frameborder="0" allowfullscreen></iframe>
+		</p>
+		
+		<h3 > ScreenShots</h3>
+		
+		<section id="screenShots">
+		<a class="fancybox-buttons" data-fancybox-group="button" href="images/Silver_Echo/Silver_Echo_Title.png" title="Silver Echo Title">
+		<img class="ScreenShot" src="images/Silver_Echo/Silver_Echo_Title.png" alt="Beta Rangers Title" />
+		</a>
+		
+		<a class="fancybox-buttons" data-fancybox-group="button" href="images/Silver_Echo/Silver_Echo_Instruction.png" title="Beta Rangers Character Selection">
+		<img class="ScreenShot" src="images/Silver_Echo/Silver_Echo_Instruction.png" alt="Beta Rangers Character Selection" />
+		</a>
+		
+		<a class="fancybox-buttons" data-fancybox-group="button" href="images/Silver_Echo/Silver_Echo_Gameplay_1.png" title="Silver Echo Gameplay 1">
+		<img class="ScreenShot" src="images/Silver_Echo/Silver_Echo_Gameplay_1.png" alt="Silver Echo Gameplay 1" />
+		</a>
+		
+		<a class="fancybox-buttons" data-fancybox-group="button"  href="images/Silver_Echo/Silver_Echo_Gameplay_2.png" title="Beta Rangers Gameplay 2">
+		<img class="ScreenShot" src="images/Silver_Echo/Silver_Echo_Gameplay_2.png" alt="Silver Echo Gameplay 2" />
+		</a>
+		
+		<a class="fancybox-buttons" data-fancybox-group="button"  href="images/Silver_Echo/Silver_Echo_Gameplay_3.png" title="Silver Echo Gameplay 3">
+		<img class="ScreenShot" src="images/Silver_Echo/Silver_Echo_Gameplay_3.png" alt="Silver Echo Gameplay 3" />
+		</a>
+		
+        <a class="fancybox-buttons" data-fancybox-group="button"  href="images/Silver_Echo/Silver_Echo_Gameplay_4.png" title="Silver Echo Gameplay 4">
+		<img class="ScreenShot" src="images/Silver_Echo/Silver_Echo_Gameplay_4.png" alt="Silver Echo Gameplay 4" />
+		</a>
+          
+        <a class="fancybox-buttons" data-fancybox-group="button"  href="images/Silver_Echo/Silver_Echo_Credits.png" title="Silver Echo Credits">
+		<img class="ScreenShot" src="images/Silver_Echo/Silver_Echo_Credits.png" alt="Silver Echo Credits" />
+		</a>
+          
+		</section>
+		
+        <h3> Global Game Jam Page</h3>
+        <p class="CenterText">
+            <a id="GGJLink" href="http://globalgamejam.org/2017/games/silver-echo">SILVER ECHO GLOBAL GAME JAM PAGE </a>
+        </p>
+      
+		<h3> GitHub </h3>
+		<p>
+			<a id="GithubLink" href = "https://github.com/Josh9309/ProjectGemini"> <img src="images/githubLogo.png" alt="Github Logo"/> Silver Echo Git Repo </a>
+		</p>
+		
+		<h3> Game Download </h3>
+		<p class = "CenterText">
+			<a class="DownloadLink" href = "downloads/Silver_Echo.zip" download> Silver Echo Game Download </a>
+		</p>
+	</div>
+	
+	<footer>
+		Copyright 2017 Josh Malmquist<br/>
+		All Rights Reserved<br/>
+	</footer>
+	<script src="Javascript/dropDownJava.js"></script>
+</body>
+
+</html>

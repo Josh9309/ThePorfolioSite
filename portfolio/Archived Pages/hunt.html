@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset = "utf-8">
+	<link href="styles.css" rel="stylesheet"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Josh Malmquist Portfolio </title>
+	<script src = "Javascript/jquery.min.js"></script>
+	
+		
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="fancybox/lib/jquery-1.10.1.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+	<!-- Add Thumbnail helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+		});
+	</script>
+</head>
+
+<body>
+	
+	<h1> Josh Malmquist Portfolio Site </h1>
+	
+	<nav class = "navBar">
+		<ul>
+			<li id="navBegin" ><a id="HomeLink"  href="index.html"> Home </a> </li>
+			<li class="dropdownHead"> <a href="Projects.html" id="Projects" class="active" onclick="projectClick()"> Projects </a>  
+				<ul id = "projectSubNav"> 
+					<li><a id="CascadeLink" href="Cascade.html"> Cascade </a> </li>
+					<li><a id="PulpLink" href="Pulp_Legends.html"> Pulp Legends </a></li>
+					<li><a id="BetaLink" href="Beta_Rangers.html"> Beta Rangers </a></li>
+					<li><a id=SilverEchoLink href="SilverEcho.html"> Silver Echo</a></li>
+					<li><a id="SlimeLink" href="Slime_Spree.html"> Slime Spree </a></li>
+					<li><a id="TBDLink" href="TBD.html"> TBD- Tis Been Decided </a> </li>
+					<li><a id="ROBOTZOOLink" href="robotZoo.html">  Robot Zoo </a> </li>
+				</ul>
+			</li>
+			<li> <a  id="ContactLINK" href="ContactMe.html">Contact Me </a></li>
+			<li class="dropdownHead" style="padding: 0px;"><a href="https://github.com/Josh9309" id="Github" onmouseover="gitClick()"> GitHub </a>
+				<ul id="gitSubNav"> 
+					<li><a href="https://github.com/Josh9309/Pulp-Legends"> Pulp Legends </a> </li>
+					<li><a href="https://github.com/Josh9309/Beta-Rangers"> Beta Rangers </a> </li>
+					<li><a href="https://github.com/Josh9309/SilverEcho"> Silver Echo</a></li>
+					<li><a href="https://github.com/Josh9309/Slime-Spree"> Slime Spree </a> </li>
+					<li><a href="https://github.com/Josh9309/TBD-The-Game"> TBD- Tis Been Decided </a> </li>
+					<li><a href="https://github.com/Josh9309/Robot-Zoo-Project">  Robot Zoo </a> </li>
+					<li><a href="https://github.com/Josh9309/ThePorfolioSite"> Portfolio Site </a> </li>
+				</ul>
+			</li>
+			<li><a  id="NOTESLink"  href="notes.html"> Notes </a></li>
+		</ul>
+	</nav>
+
+	<div>
+		<h2> Rathalos’s Hunt </h2>
+		
+		<h3> Summary </h3>
+		
+		<p>
+			In Rathalos’s Hunt I created all the art assets and the opening animatic for the game. The Game was made by my professor Sten Mckenzie and we were asked to create a 
+			story and 2D art assets for the game. The game is a “shoot em up” where you fight oncoming enemies. The story behind my game was that you are Rathalos, 
+			an experienced monster hunter working to become a master hunter. To do this Rathalos must journey to an ancient castle that has become overridden
+			with various types of monsters and completely clear the castle in order to earn his title as Master Monster Hunter.
+		</p>
+		
+		<h3> ScreenShots</h3>
+		
+		<section id="screenShots">
+		<a class="fancybox-buttons" data-fancybox-group="button"  href="images/RathalosHunt.png" title="Rathalos Hunt Image 1 of 5">
+		<img class="ScreenShot" src="images/RathalosHunt.png" alt="RathalosHunt screenshot 1"/>
+		</a>
+		
+		<a class="fancybox-buttons" data-fancybox-group="button"  href="images/RathalosHunt2.png" title="Rathalos Hunt Image 2 of 5">
+		<img class="ScreenShot" src="images/RathalosHunt2.png" alt="RathalosHunt screenshot 2"/>
+		</a>
+		
+		<a class="fancybox-buttons" data-fancybox-group="button"  href="images/RathalosHunt3.png" title="Rathalos Hunt Image 3 of 5">
+		<img class="ScreenShot" src="images/RathalosHunt3.png" alt="RathalosHunt screenshot 3"/>
+		</a>
+		
+		<a class="fancybox-buttons" data-fancybox-group="button"  href="images/RathalosHunt4.png" title="Rathalos Hunt Image 4 of 5">
+		<img class="ScreenShot" src="images/RathalosHunt4.png" alt="RathalosHunt screenshot 4"/>
+		</a>
+		
+		<a class="fancybox-buttons" data-fancybox-group="button"  href="images/RathalosHunt5.png" title="Rathalos Hunt Image 5 of 5">
+		<img class="ScreenShot" src="images/RathalosHunt5.png" alt="RathalosHunt screenshot 5"/>
+		</a>
+		
+		</section>
+		
+		<h3> Game Download </h3>
+		<p class = "CenterText">
+			<a class="DownloadLink" href = "downloads/rathalosHunt.zip" download> Rathalos’s Hunt Download </a>
+			<br/>
+			<a class="DownloadLink" href="downloads/rathalosHuntAssets.pdf" download> Rathalos’s Hunt Assets (PDF) </a>
+		</p>
+	</div>
+	
+	<footer>
+		Copyright 2017 Josh Malmquist<br/>
+		All Rights Reserved<br/>
+	</footer>
+	<script src="Javascript/dropDownJava.js"></script>
+</body>
+
+</html>

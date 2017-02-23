@@ -23,16 +23,17 @@ function projectClick(){
 	console.log("clicked");
 	if(mq.matches)
 	{
-		if(!projClicked)
-		{
-			displayProjectSubNav();
-			projClicked = true;
-		}
-		else
-		{
-			hideProjectSubNav();
-			projClicked = false;
-		}
+		hideProjectSubNav();
+		//if(!projClicked)
+		//{
+		//	displayProjectSubNav();
+		//	projClicked = true;
+		//}
+		//else
+		//{
+		//	hideProjectSubNav();
+		//	projClicked = false;
+		//}
 	}
 }
 
@@ -60,15 +61,16 @@ function gitClick(){
 	console.log("gitClicked");
 	if(mq.matches)
 	{	
-		if(!gitClicked)
-		{
-			displayGithubSubNav();
-			gitClicked = true;
-		}
-		else
-		{
-			hideGithubSubNav();
-			gitClicked = false;
-		}
+		hideGithubSubNav();
+		//if(!gitClicked)
+		//{
+		//	displayGithubSubNav();
+		//	gitClicked = true;
+		//}
+		//else
+		//{
+		//	hideGithubSubNav();
+		//	gitClicked = false;
+		//}
 	}
 }

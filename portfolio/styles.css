@@ -110,6 +110,11 @@ section{
 	width: 85%;
 	margin:auto;
 }
+
+.CenterText{
+	text-align: center;
+}
+
 /* <-- General Page CSS Rules ends --> */
 
 /*<--About Me CSS Rules-->*/
@@ -291,7 +296,10 @@ section{
 #GithubLink{
 	font-size:30pt;
     display: block;
+	margin-left: 20%;
 }
+
+/*<-- Global Game Jam Link -->*/
 
 /*<-- Footer CSS -->*/
 footer{
@@ -325,7 +333,6 @@ footer{
 /*<-- Game Download CSS-->*/
 .DownloadLink {
 	position: relative;
-	left: 30%;
 	font-size:20pt;
 }
 
