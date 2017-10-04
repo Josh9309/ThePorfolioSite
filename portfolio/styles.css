@@ -115,6 +115,7 @@ section{
 	text-align: center;
 }
 
+SPAN.li  {display: list-item; margin-left: 2em}
 /* <-- General Page CSS Rules ends --> */
 
 /*<--About Me CSS Rules-->*/

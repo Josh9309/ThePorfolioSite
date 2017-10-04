@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset = "utf-8">
+	<link href="styles.css" rel="stylesheet"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Beta Rangers </title>
+		
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="fancybox/lib/jquery-1.10.1.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+	<!-- Add Thumbnail helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+		});
+	</script>
+</head>
+
+<body>
+	
+	<h1> Josh Malmquist Portfolio Site </h1>
+	
+	<nav class = "navBar">
+		<ul>
+			<li id="navBegin" ><a id="HomeLink"  href="index.html"> Home </a> </li>
+			<li class="dropdownHead"> <a href="Projects.html" id="Projects" class="active" onmouseover="projectClick()"> Projects </a>  
+				<ul id = "projectSubNav"> 
+					<li><a id="CascadeLink" href="Cascade.html"> Cascade </a> </li>
+					<li class = "active"><a id="BlackfeatherLink" href="Blackfeather.html">BlackFeather</a></li>
+					<li><a id="PulpLink" href="Pulp_Legends.html"> Pulp Legends </a></li>
+					<li><a id="BetaLink" href="Beta_Rangers.html"> Beta Rangers </a></li>
+					<li><a id=SilverEchoLink href="SilverEcho.html"> Silver Echo</a></li>
+					<li><a id="SlimeLink" href="Slime_Spree.html"> Slime Spree </a></li>
+					<li><a id="TBDLink" href="TBD.html"> TBD- Tis Been Decided </a> </li>
+					<li><a id="ROBOTZOOLink" href="robotZoo.html">  Robot Zoo </a> </li>
+				</ul>
+			</li>
+			<li> <a  id="ContactLINK" href="ContactMe.html">Contact Me </a></li>
+			<li class="dropdownHead" style="padding: 0px;"><a href="https://github.com/Josh9309" id="Github" onmouseover="gitClick()"> GitHub </a>
+				<ul id="gitSubNav"> 
+					<li><a href="https://github.com/Josh9309/Blackbeard">BlackFeather</a></li>
+					<li><a href="https://github.com/Josh9309/Pulp-Legends"> Pulp Legends </a> </li>
+					<li><a href="https://github.com/Josh9309/Beta-Rangers"> Beta Rangers </a> </li>
+					<li><a href="https://github.com/Josh9309/SilverEcho"> Silver Echo</a></li>
+					<li><a href="https://github.com/Josh9309/Slime-Spree"> Slime Spree </a> </li>
+					<li><a href="https://github.com/Josh9309/TBD-The-Game"> TBD- Tis Been Decided </a> </li>
+					<li><a href="https://github.com/Josh9309/Robot-Zoo-Project">  Robot Zoo </a> </li>
+					<li><a href="https://github.com/Josh9309/ThePorfolioSite"> Portfolio Site </a> </li>
+				</ul>
+			</li>
+			<li><a  id="NOTESLink"  href="notes.html"> Notes </a></li>
+		</ul>
+	</nav>
+	
+	<div>
+		<h2> Blackfeather </h2>
+		
+		<h3> Gameplay </h3>
+		
+		<p>
+			<iframe style="left:10%" width="100%" height="500" src="https://www.youtube.com/embed/yO73-j-0nSk" frameborder="0" allowfullscreen></iframe>
+		</p>
+		
+		<h3> Summary </h3>
+		
+		<p>
+			Blackfeather is a 2-player 3D platformer racing game made by an 8-person team (5 programmers and 3 artists) over a 5-month long period in Unity 5.The 1st player plays as a pirate, who is racing across platforming challenges to a treasure, while the 2nd player is a parrot attempting to slow down other pirate. The parrot slows down the pirate by activating various obstacles and traps littered throughout the path. Additionally, the parrot is also equipped with various objects that it can drop on the pirate to slow them down. After a short amount of time the players switch roles. Each time they swap roles their pirate will stay where they left off on the course. They will continue to swap roles until one of the pirates reaches the treasure at the end of the level. The goal is to be the first pirate to reach the treasure and to claim that gold for yourself!
+        </p>
+        
+        <h3>What I Worked On</h3>
+          
+        <p>
+			For Blackfeather I worked as the producer, gameplay programmer and level designer. 
+			<br/><br/>
+			As Producer I oversaw leading team meetings, establishing milestone deadlines, and assign tasks to everyone. I was also responsible for overseeing the Art team and establishing an art pipeline for them, so they could properly import assets into the game. I used scrum development tactics while producing to keep us on track with where we wanted the game to be going.
+			<br/><br/>
+			As a Gameplay Programmer I was responsible for implementing a lot of the basic mechanics for the pirate such as movement, jumping, and stun effects. I was also responsible for working on setting up the games 3rd person camera system for both the parrot and the pirate characters. I also helped create many of the traps and platforms throughout the level. <br/>
+			<strong>Gameplay Mechanics worked on:</strong>
+				<span class=li>Basic mechanics for the pirate such as movement, jumping, respawn system, and stun effects</span>
+				<span class=li>Fly movement and control for parrot</span>
+				<span class=li>3rd person camera system for both the parrot and the pirate characters</span>
+				<span class=li>Checkpoints, moving and rotating platforms </span>
+				<span class=li>Spike traps, rotating blade trap </span>
+				<span class=li>Any bug fixes that were needed</span>
+			<br/><br/>
+			As a Level Designer I was responsible for the entire creation of the games level map. I worked on designing, grayboxing and implementing the design into the game. This included setting up checkpoints, platforms, and traps. I was also worked on importing/updating new models and assets that the art team provided.
+		</p>
+
+		<h3 > ScreenShots</h3>
+		
+		<section id="screenShots">
+		<a class="fancybox-buttons" data-fancybox-group="button" href="images/Blackfeather/Blackfeather_Title.png" title="Blackfeather Title">
+		<img class="ScreenShot" src="images/Blackfeather/Blackfeather_Title.png" alt="Blackfeather Title" />
+		</a>
+		
+		<a class="fancybox-buttons" data-fancybox-group="button"  href="images/Blackfeather/Blackfeather_Loading.png" title="Blackfeather Loading">
+		<img class="ScreenShot" src="images/Blackfeather/Blackfeather_Loading.png" alt="Blackfeather Loading" />
+		</a>
+			
+		<a class="fancybox-buttons" data-fancybox-group="button"  href="images/Blackfeather/Blackfeather_Gameplay_1.png" title="Blackfeather Gameplay">
+		<img class="ScreenShot" src="images/Blackfeather/Blackfeather_Gameplay_1.png" alt="Beta Rangers Gameplay 1" />
+		</a>
+		
+		<a class="fancybox-buttons" data-fancybox-group="button"  href="images/Blackfeather/Blackfeather_Gameplay_2.png" title="Blackfeather Gameplay 2">
+		<img class="ScreenShot" src="images/Blackfeather/Blackfeather_Gameplay_2.png" alt="Blackfeather Gameplay 2" />
+		</a>
+			
+		<a class="fancybox-buttons" data-fancybox-group="button"  href="images/Blackfeather/Blackfeather_Gameplay_3.png" title="Blackfeather Gameplay 3">
+		<img class="ScreenShot" src="images/Blackfeather/Blackfeather_Gameplay_3.png" alt="Blackfeather Gameplay 3" />
+		</a>
+			
+		<a class="fancybox-buttons" data-fancybox-group="button"  href="images/Blackfeather/Blackfeather_Scenic_1.png" title="Blackfeather Level shot 1">
+		<img class="ScreenShot" src="images/Blackfeather/Blackfeather_Scenic_1.png" alt="Blackfeather level shot 1" />
+		</a>
+		
+		<a class="fancybox-buttons" data-fancybox-group="button"  href="images/Blackfeather/Blackfeather_Scenic_2.png" title="Blackfeather Level shot 2">
+		<img class="ScreenShot" src="images/Blackfeather/Blackfeather_Scenic_2.png" alt="Blackfeather level shot 2" />
+		</a>
+		
+		<a class="fancybox-buttons" data-fancybox-group="button"  href="images/Blackfeather/Blackfeather_Scenic_3.png" title="Blackfeather Level shot 3">
+		<img class="ScreenShot" src="images/Blackfeather/Blackfeather_Scenic_3.png" alt="Blackfeather level shot 3" />
+		</a>
+		</section>
+	
+		<h3> Team Members </h3>
+		<ul class="list">
+			<li> Josh Malmquist (ME) = Producer /Gameplay Programmer / Level Designer </li>
+			<li> Charles Williams = General Programmer </li>
+			<li> Kevin Idzek = Gameplay Programmer</li>
+			<li> Joel Shuart = UI Programmer /Sound</li>
+			<li> Satchit Puri = UI Programmer / Animation </li>
+			<li> Gregory Kreisel = Lead 3D Artist</li>
+			<li> David Chang = 3D Artist</li>
+			<li> Israel Jimenez = 3D Artist</li>
+		</ul>
+		
+		<h3> GitHub </h3>
+		<p>
+			<a id="GithubLink" href = "https://github.com/Josh9309/Blackbeard"> <img src="images/githubLogo.png" alt="Github Logo"/> Blackfeather Git Repo </a>
+		</p>
+		
+		<h3> Game Download </h3>
+		<p class = "CenterText">
+			<!--<a class="DownloadLink" href = "downloads/Blackfeather.zip" download> Blackfeather Game Download </a>--> COMING SOON!
+		</p>
+	</div>
+	
+	<footer>
+		Copyright 2017 Josh Malmquist<br/>
+		All Rights Reserved<br/>
+	</footer>
+	<script src="Javascript/dropDownJava.js"></script>
+</body>
+
+</html>
