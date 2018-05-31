@@ -11,12 +11,7 @@ font-family: 'Roboto Slab', serif;
 
 /* <-- General Page CSS Rules --> */
 html{
-	background:url("images/siteBackground.jpg") no-repeat center center fixed;
-	background-size: cover;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size: cover;
-	background-size: 100% 100%;
+	background-color: #2D322C;
 }
 body
 {
